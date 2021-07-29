@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid 19 Api</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-5">Covid 19 Live Data In Table</h1>
+      <br /><br />
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Total Cases</th>
+            <th>Total Deaths</th>
+            <th>Total Recovered</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="data"></tr>
+        </tbody>
+      </table>
+      <br />
+      <button onclick="refreshData()" class="btn btn-danger btn-block">
+        Refresh Data
+      </button>
+    </div>
+  </body>
+</html>
